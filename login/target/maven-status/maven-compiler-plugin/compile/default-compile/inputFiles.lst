@@ -1,0 +1,13 @@
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\rest\UsuarioController.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\config\AuthorizationServerConfig.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\service\UsuarioService.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\exception\UsuarioCadastradoException.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\config\WebConfig.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\model\repository\UsuarioRepository.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\model\entity\Usuario.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\LoginApplication.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\exception\ApiErrors.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\rest\ApplicationControllerAdvice.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\config\SecurityConfig.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\config\ResourceServerConfig.java
+C:\Users\Waldyr Turquetti\Desktop\CDDit\IBM\IBMsource\IBM-BackEnd\login\src\main\java\io\git\cddit\login\config\InternacionalizacaoConfig.java

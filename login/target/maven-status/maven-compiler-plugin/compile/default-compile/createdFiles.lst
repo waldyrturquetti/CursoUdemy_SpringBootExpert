@@ -1,0 +1,14 @@
+io\git\cddit\login\config\AuthorizationServerConfig.class
+io\git\cddit\login\rest\ApplicationControllerAdvice.class
+io\git\cddit\login\rest\UsuarioController.class
+io\git\cddit\login\exception\UsuarioCadastradoException.class
+io\git\cddit\login\config\SecurityConfig.class
+io\git\cddit\login\exception\ApiErrors.class
+io\git\cddit\login\model\entity\Cliente$ClienteBuilder.class
+io\git\cddit\login\model\repository\UsuarioRepository.class
+io\git\cddit\login\service\UsuarioService.class
+io\git\cddit\login\config\ResourceServerConfig.class
+io\git\cddit\login\model\entity\Usuario.class
+io\git\cddit\login\config\WebConfig.class
+io\git\cddit\login\LoginApplication.class
+io\git\cddit\login\config\InternacionalizacaoConfig.class

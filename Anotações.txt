@@ -1,0 +1,17 @@
+Spring Boot Documentação:
+https://spring.io/projects/spring-boot#overview
+
+Spring Quickstart Guide:
+https://spring.io/quickstart
+
+Building an Application with Spring Boot:
+https://spring.io/guides/gs/spring-boot/
+
+Building a RESTful Web Service:
+https://spring.io/guides/gs/rest-service/
+
+Guides:
+https://spring.io/guides
+
+Guia das annotations do Spring:
+https://domineospring.wordpress.com/2016/07/13/guia-das-annotations-do-spring/
