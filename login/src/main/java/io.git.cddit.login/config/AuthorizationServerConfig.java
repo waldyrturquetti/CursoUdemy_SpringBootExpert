@@ -44,8 +44,8 @@ public class  AuthorizationServerConfig extends AuthorizationServerConfigurerAda
     public TokenStore tokenStore(){
         //TokenStore Persistence interface for OAuth2 tokens.
 
-        //Uma JwtTokenStore é uma implementação que apenas lê dados dos próprios tokens. Não é realmente um store, já que nunca persiste nada,
-        //e métodos como getAccessToken(OAuth2Authentication)sempre retornam nulo. No entanto, é uma ferramenta útil,
+        //Uma JwtTokenStore é uma implementação que apenas lê dados dos próprios tokens. Não é realmente um store, já que nunca persiste
+        // nada,e métodos como getAccessToken(OAuth2Authentication)sempre retornam nulo. No entanto, é uma ferramenta útil,
         //uma vez que traduz tokens de acesso e para autenticações. Use-o sempre que um TokenStore for necessário,
         //mas lembre-se de usar a mesma JwtAccessTokenConverter instância (ou uma com o mesmo verificador) que foi usada quando os
         //tokens foram criados.
@@ -62,7 +62,7 @@ public class  AuthorizationServerConfig extends AuthorizationServerConfigurerAda
 
         //JwtAccessTokenConverter
         //Ajudante que traduz entre valores de token codificados JWT e informações de autenticação OAuth (em ambas as direções).
-        //Também atua como um TokenEnhancerquando os tokens são concedidos.
+        //Também atua como um TokenEnhancer quando os tokens são concedidos.
 
         JwtAccessTokenConverter tokenConverter = new JwtAccessTokenConverter();
         tokenConverter.setSigningKey(signingKey);
@@ -128,7 +128,7 @@ public class  AuthorizationServerConfig extends AuthorizationServerConfigurerAda
 //@Bean é usado quando você precisa explicitamente configurar o bean ao invés de deixar o spring automaticamente fazer.
 //Por padrão, os beans no spring são singletons, ou seja, uma instância por container context.
 //@autowired é como você injeta, ou seja, usa seus beans pelo projeto.
-
+//
 //As vezes precisamos ter beans cujas classes nós não podemos anotar.
 //
 //Vamos supor uma classe ArquivoNuvem que não está em nosso projeto e que gostaríamos que ela fosse passível de ser injetada.
@@ -153,7 +153,7 @@ public class  AuthorizationServerConfig extends AuthorizationServerConfigurerAda
 //}
 //Com a configuração acima, podemos injetá-la em nossa classe de serviço normalmente:
 //
-
+//
 //public class ClienteServico {
 //
 //  @Autowired
@@ -167,9 +167,12 @@ public class  AuthorizationServerConfig extends AuthorizationServerConfigurerAda
 //Configure
 //Para realizar a configuração do servidor, precisamos sobrescrever três métodos. Todos possuem o nome
 // configure, mas cada um recebe um parâmetro diferente:
+//1
 //AuthorizationServerSecurityConfigurer define as configurações de segurança nos endpoints relativos
 // aos tokens de acesso;
+//2
 //ClientDetailsServiceConfigurer define os detalhes para o acesso da aplicação cliente ao servidor
 // de autenticação;
+//3
 //AuthorizationServerEndpointsConfigurer, que define configurações para os endpoints de autenticação
 // e geração de tokens.

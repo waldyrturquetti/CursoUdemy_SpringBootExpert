@@ -11,8 +11,9 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
-//A WebSecurityConfigclasse é anotada com @EnableWebSecuritypara habilitar o suporte de segurança da Web
+//A WebSecurityConfigclasse é anotada com @EnableWebSecurity para habilitar o suporte de segurança da Web
 // do Spring Security e fornecer a integração Spring MVC. Ele também estende WebSecurityConfigurerAdaptere substitui
 // alguns de seus métodos para definir algumas especificações da configuração de segurança da web.
 @EnableWebSecurity
@@ -22,7 +23,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 //Um componente que requer um token de acesso para permitir, ou pelo menos considerar, o acesso aos seus recursos
 
 //@EnableAuthorizationServer
-//Por padrão, @EnableAuthorizationServerconcede a um cliente acesso às credenciais do cliente
+//Por padrão, @EnableAuthorizationServer concede a um cliente acesso às credenciais do cliente
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     //@Autowired

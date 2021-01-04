@@ -101,28 +101,6 @@ public class ApplicationControllerAdvice {
 // , quer definamos o motivo ou não.
 //Observe também que o Spring usa a mesma configuração para subclasses, a menos que as marcemos com @ResponseStatus também.
 
-//Collection
-//Esta classe consiste exclusivamente em métodos estáticos que operam ou retornam coleções. Ele contém algoritmos polimórficos que
-// operam em coleções, "invólucros", que retornam uma nova coleção apoiada por uma coleção especificada e algumas outras probabilidades
-// e extremidades.
-//Todos os métodos dessa classe lançam uma NullPointerException se as coleções ou objetos de classe fornecidos a eles forem nulos.
-//
-//A documentação para os algoritmos polimórficos contidos nesta classe geralmente inclui uma breve descrição da implementação.
-// Essas descrições devem ser consideradas como notas de implementação, ao invés de partes da especificação. Os implementadores devem
-// se sentir à vontade para substituir outros algoritmos, desde que a especificação em si seja cumprida.
-// (Por exemplo, o algoritmo usado por sort não precisa ser um mergesort, mas precisa ser estável.)
-//
-//Os algoritmos "destrutivos" contidos nesta classe, ou seja, os algoritmos que modificam a coleção na qual operam,
-// são especificados para lançar UnsupportedOperationException se a coleção não suportar a (s) primitiva (s) de mutação
-// apropriada (s), como o método set. Esses algoritmos podem, mas não são obrigados a, lançar essa exceção se uma chamada não
-// tiver efeito sobre a coleção. Por exemplo, chamar o método de classificação em uma lista não modificável que
-// já está classificada pode ou não lançar UnsupportedOperationException.
-// Coleções são usadas para armazenar, recuperar e manipular dados, assim como facilitar a transmissão de dados de um método para outro.
-//Os três grupos do Java Collections são:
-//Listas – Listas de itens, gerencia um grupo de elementos em sequência,como se fosse uma matriz, mas, a grande diferença é que List a quantidade de elementos é modificada dinamicamente. Classes que implementam java.util.List;
-//Conjuntos - Itens exclusivos, não permitem duplicação de elementos, classes que implementam java.util.Set;
-//Mapas – Itens com uma identificação exclusivaClasses que implementam java.util.Map.
-
 //strem
 //O stream é um objeto de transmissão de dados. Onde um fluxo de dados serial é feito através de uma origem e de um destino.
 //Para manipular objetos serializados são usados dois tipos de stream o FileInputStream e o FileOutputStream.
@@ -148,7 +126,32 @@ public class ApplicationControllerAdvice {
 //A função "map" (não confunda com a estrutura de dados Map) é uma
 //função que aplica uma função a todos elementos de uma stream.
 
-//Então. O objeto errors do método validate(..) é o registrador dos erros de validação e conversão do Spring. Em resumo,
+//Collection
+//Esta classe consiste exclusivamente em métodos estáticos que operam ou retornam coleções. Ele contém algoritmos polimórficos que
+// operam em coleções, "invólucros", que retornam uma nova coleção apoiada por uma coleção especificada e algumas outras probabilidades
+// e extremidades.
+//Todos os métodos dessa classe lançam uma NullPointerException se as coleções ou objetos de classe fornecidos a eles forem nulos.
+//
+//A documentação para os algoritmos polimórficos contidos nesta classe geralmente inclui uma breve descrição da implementação.
+// Essas descrições devem ser consideradas como notas de implementação, ao invés de partes da especificação. Os implementadores devem
+// se sentir à vontade para substituir outros algoritmos, desde que a especificação em si seja cumprida.
+// (Por exemplo, o algoritmo usado por sort não precisa ser um mergesort, mas precisa ser estável.)
+//
+//Os algoritmos "destrutivos" contidos nesta classe, ou seja, os algoritmos que modificam a coleção na qual operam,
+// são especificados para lançar UnsupportedOperationException se a coleção não suportar a (s) primitiva (s) de mutação
+// apropriada (s), como o método set. Esses algoritmos podem, mas não são obrigados a, lançar essa exceção se uma chamada não
+// tiver efeito sobre a coleção. Por exemplo, chamar o método de classificação em uma lista não modificável que
+// já está classificada pode ou não lançar UnsupportedOperationException.
+// Coleções são usadas para armazenar, recuperar e manipular dados, assim como facilitar a transmissão de dados de um método para outro.
+//Os três grupos do Java Collections são:
+//Listas – Listas de itens, gerencia um grupo de elementos em sequência,como se fosse uma matriz, mas, a grande diferença é que
+// List a quantidade de elementos é modificada dinamicamente. Classes que implementam java.util.List;
+//Conjuntos - Itens exclusivos, não permitem duplicação de elementos, classes que implementam java.util.Set;
+//Mapas – Itens com uma identificação exclusivaClasses que implementam java.util.Map.
+
+
+//MethodArgumentNotValidException
+//O objeto errors do método validate(..) é o registrador dos erros de validação e conversão do Spring. Em resumo,
 // como a validação é aplicada automaticamente pelo Spring (quando você anota com @Valid) ele vai usar sua implementação de
 // Validator, onde você vai registrando as ocorrências (rejeitando valores através do objeto errors).
 //Como a validação ocorre durante o processo de binding (quando seu objeto está sendo montado pelo Spring com os dados
@@ -156,7 +159,8 @@ public class ApplicationControllerAdvice {
 // aos resultados, que é o que ele faz permitindo que você receba um objeto de BindingResult no método. Com ele você pode verificar
 // se houve algum problema e prever uma volta para o formulário, por exemplo. Sobre os métodos:
 //errors.rejectValue("paginas", "field.required");
-//Aqui temos a maneira padrão de indicar problemas de validação quanto a um campo. Dada um verificação sua, se algo deu errado com o valor passado no campo paginas, você rejeita o valor, registrando no objeto errors.
+//Aqui temos a maneira padrão de indicar problemas de validação quanto a um campo. Dada um verificação sua, se algo deu
+// errado com o valor passado no campo paginas, você rejeita o valor, registrando no objeto errors.
 //
 //Vejamos o outro exemplo:
 //ValidationUtils.rejectIfEmpty(errors, "titulo", "field.required");

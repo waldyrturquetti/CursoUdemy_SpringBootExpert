@@ -60,7 +60,7 @@ public class UsuarioCadastradoException extends RuntimeException {
 //
 //Error é a superclasse de todas as exceções das quais normalmente não se espera que os programas comuns se recuperem.
 //
-//Errore todas as suas subclasses são, coletivamente, as classes de erro .
+//Error e todas as suas subclasses são, coletivamente, as classes de erro .
 //
 //As classes de exceção não verificadas são as classes de exceção de tempo de execução e as classes de erro.
 //
