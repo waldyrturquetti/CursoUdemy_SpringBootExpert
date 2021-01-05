@@ -36,7 +36,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        auth.
+
+
+
+//        auth.                                 //Dessa maneira inseri um usuario com os dados salvos em memória
 //                inMemoryAuthentication()
 //                .withUser("waldyrzao")
 //                .password("123")
