@@ -72,7 +72,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     //o suporte CSRF é disabilitado
             .cors()
                 //Adiciona um CorsFilter para ser usado. Se um bean com o nome de corsFilter for fornecido, o CorsFilter será usado.
-                // Caso contrário, se corsConfigurationSource for definido, o CorsConfiguration será usado. Caso contrário, se Spring MVC estiver
+                // Caso contrário, se cors ConfigurationSource for definido, o CorsConfiguration será usado. Caso contrário, se Spring MVC estiver
                 // no caminho de classe, a HandlerMappingIntrospector será usado.
         .and()
 
